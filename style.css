@@ -1,0 +1,135 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 550px;
+    margin: 0px auto;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box {
+    width: 250px;
+    text-align: center;
+    padding-top: 80px;
+    position: relative;
+}
+
+.box .price {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    margin-left: -70px;
+}
+
+.box .price .amount {
+    font-size: 30px;
+}
+
+.box .price .time {
+    font-size: 16px;
+}
+
+.one .price::before {
+    content: "hot";
+    background-color: #fff;
+    color: #1998ff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1998ff;
+    position: absolute;
+    left: 75%;
+    top: -8px;
+}
+
+.box .logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.box .list div {
+    padding: 10px 0px;
+}
+
+button {
+    font-size: 15px;
+    padding: 8px 25px;
+    margin: 20px 0px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.one {
+    background-color: #1998ff;
+    color: #fff;
+}
+
+
+.two {
+    background-color: #fff;
+    color: #545454;
+    border: 1px solid #545454;
+}
+
+.one button {
+    background-color: #fff;
+    color: #1998ff;
+}
+
+
+.two button {
+    background-color: #1998ff;
+    color: #fff;
+}
+
+.one .price {
+    background-color: #1998ff;
+    color: #fff;
+    border: 10px solid #fff;
+    outline: 1px solid #1998ff;
+}
+
+.two .price {
+    background-color: #545454;
+    color: #fff;
+    border: 10px solid #fff;
+    outline: 1px solid #545454;
+}
+
+.one .list div {
+    border-top: 1px solid #178ded;
+}
+
+.one .list div:last-child {
+    border-top: 1px solid #178ded;
+    border-bottom: 1px solid #178ded;
+}
+
+.two .list div {
+    border-top: 1px solid #545454;
+}
+
+.two .list div:last-child {
+    border-top: 1px solid #545454;
+    border-bottom: 1px solid #545454;
+}
